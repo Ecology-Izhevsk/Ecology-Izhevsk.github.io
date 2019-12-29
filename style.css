@@ -9,6 +9,12 @@ body
 	font-family: sans-serif;
 	/*font-family: "Comic Sans MS", "Comic Sans", cursive;*/
 	font-size: 22px;
+	padding-bottom: 0px;
+}
+
+ul
+{
+	list-style: none;
 }
 
 header
@@ -162,4 +168,51 @@ hr
 	text-decoration: underline;
 	text-align: center;
 	margin-top: 10px;
+}
+
+footer
+{
+	width: 100% - 60px;
+	margin: auto;
+	background-color: rgba(0, 90, 0, 0.9);
+	margin-bottom: 0px;
+	padding: 10px 30px 20px 30px;
+	margin-top: 50px;
+}
+
+.footer-menu
+{
+	margin-bottom: 0px;
+	display: inline-block;
+	list-style: none;
+	margin-right: 30px;
+}
+
+.footer-menu:first-child
+{
+	margin-left: 60px;
+}
+
+footer p
+{
+	margin: 0px 0px 0px 100px;
+}
+
+footer a
+{
+	color: rgba(255, 255, 255, 0.8);
+}
+
+footer .contacts-footer
+{
+	list-style: none;
+	padding-right: 50px;
+	margin-bottom: 0px;
+	text-align: right;
+}
+
+footer .contacts-footer
+{
+	display: inline-block;
+	margin-left: 200px;
 }
