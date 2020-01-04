@@ -131,6 +131,7 @@ h5
 	background-color: #f8f8f8;
 	padding: 20px;
 	border: 2px solid green;
+	margin-bottom: 30px;
 }
 
 .event
@@ -176,9 +177,9 @@ footer
 	margin: auto;
 	background-color: rgba(0, 90, 0, 0.9);
 	margin-bottom: 0px;
-	padding: 10px 30px 20px 30px;
+	padding: 0px 30px 10px 30px;
 	margin-top: 50px;
-	font-size: 18px;
+	font-size: 16px;
 }
 
 .footer-menu
@@ -186,7 +187,7 @@ footer
 	margin-bottom: 0px;
 	display: inline-block;
 	list-style: none;
-	margin-right: 30px;
+	margin-right: 50px;
 }
 
 .footer-menu:first-child
@@ -202,14 +203,16 @@ footer p
 footer a
 {
 	color: rgba(255, 255, 255, 0.8);
+	font-size: 16px;
 }
 
 footer .contacts-footer
 {
 	list-style: none;
-	padding-right: 50px;
+	margin-right: 130px;
 	margin-bottom: 0px;
 	text-align: right;
+	float: right;
 }
 
 footer .contacts-footer
