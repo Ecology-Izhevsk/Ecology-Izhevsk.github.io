@@ -70,7 +70,7 @@ a
 	border-top-right-radius: 10px;
 }
 
-.menu li a
+.menu li a, .menu li span
 {
 	text-align: center;
 	color: #fff;
@@ -85,9 +85,9 @@ a
 
 .submenu
 {
-	margin-top: 5px;
+	margin-top: 7px;
 	position: absolute;
-	display: none;
+	visibility: hidden;
 	background-color: rgba(0, 200, 0, 0.6);
 	text-align: left;
 	padding: 10px;
@@ -101,10 +101,10 @@ a
 
 .menu > li:hover > .submenu 
 {
-	display: block;
+	visibility: visible;
 }
 
-.menu li > a:hover
+.menu li > a:hover, .menu li > span:hover
 {
 	text-decoration: underline;
 }
@@ -146,6 +146,7 @@ h5
 	width: 150px;
 	float: left;
 	margin-right: 10px;
+	border-radius: 6px;
 
 }
 
@@ -219,4 +220,20 @@ footer .contacts-footer
 {
 	display: inline-block;
 	margin-left: 250px;
+}
+
+.map img
+{
+	width: 100%;
+	border-radius: 10px;
+}
+
+.map h5
+{
+	margin-bottom: 15px;
+}
+
+.map a
+{
+	width: 100%;
 }
