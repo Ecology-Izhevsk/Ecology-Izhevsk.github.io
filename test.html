@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<title>Экология в Ижевске</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="shortcut icon" href="img/shortcut-icon.png">
+	<link rel="icon" href="img/shortcut-icon.png">
+	<script>
+		var output, qn;
+		var prev = false;
+		qn = output = 0;
+		var question = ["wfgf", "gdg", "jhxy"];
+		var a = [1, 0, 0];
+		var b = [0, 1, 0];
+		var c = [0, 0, 1];
+		var d = [0, 0, 0];
+		var aa = ["gsed", "sffg", "sfsa"];
+		var bb = ["afasg", "fmf", "jdsj"];
+		var cc = ["fskfjk", "xdrf", "sjdxe"];
+		var dd = ["sfjsk", "heye", "nvreh"];
+		
+	</script>
+</head>
+<body>
+	<header>
+		<h6>Экология в Ижевске</h6>
+		<ul class="menu">
+			<li><a href="index.html">Главная</a></li>
+			<li><span>Информация</span>
+				<ul class="submenu">
+					<li><a href="redbook.html">Красная книга<br>Удмуртии</a></li>
+					<li><a href="stateofecology.html">Состояние экологии</a></li>
+				</ul>
+			</li>
+			<li><span>Сохрани природу</span>
+				<ul class="submenu">
+					<li><a href="events.html">Мероприятия</a></li>
+					<li><a href="recycle.html">Пункты приёма<br>второсырья</a></li>
+				</ul>
+			</li>
+			<li><a href="test.html">Экологический тест</a></li>
+			<li><a href="about.html">О нас</a></li>
+		</ul>
+	</header>
+	<main>
+		<div class="wrap">
+			<h5>Экологический тест</h5>
+			<h3 id="number">Вопрос ... из ...</h3>
+			<p class="wrap question_text" style="margin-bottom: 10px;"></p>
+			<div class="buttons">
+			<button class="button" onclick="next_question(a[qn])"></button><br>
+			<button class="button" onclick="next_question(b[qn])"></button><br>
+			<button class="button" onclick="next_question(c[qn])"></button><br>
+			<button class="button" onclick="next_question(d[qn])"></button><br>
+			<button id="prev-question" onclick="prev_question()">Предыдущий вопрос</button>
+			<button id="prev-question-off">Предыдущий вопрос</button><br>
+			</div>
+		</div>
+		<script>
+
+			function init_question() 
+			{
+        		var text = document.getElementsByClassName("question_text");
+        		text[0].innerHTML = question[qn];
+        		document.getElementById("number").innerHTML = "Вопрос " + (qn + 1) + " из " + (question.length);
+        		var aaa = document.getElementsByClassName("button");
+        		aaa[0].innerHTML = aa[qn];
+        		var bbb = document.getElementsByClassName("button");
+        		aaa[1].innerHTML = bb[qn];
+        		var ccc = document.getElementsByClassName("button");
+        		aaa[2].innerHTML = cc[qn];
+        		var ddd = document.getElementsByClassName("button");
+        		aaa[3].innerHTML = dd[qn];
+        		if (prev == false) {
+        		    document.getElementById("prev-question").style.display = 'none';
+        		    document.getElementById("prev-question-off").style.display = 'block';
+        		} else {
+        		    document.getElementById("prev-question").style.display = 'block';
+        		    document.getElementById("prev-question-off").style.display = 'none';
+        		}
+        	}
+
+        	
+
+			function next_question(x)
+			{
+				qn++;
+				var y = x;
+				output += x;
+				prev = true;
+				if (qn < question.length) {
+            		init_question();
+        		} else {
+        		    results();
+        		}
+			}
+
+			function prev_question()
+			{
+        		qn -= 1;
+        		prev = false;
+        		init_question();
+        		output -= y;
+        		
+        		
+    		}
+
+			function results()
+			{
+				alert("Ваш результат " + output + " из " + question.length)
+			}
+
+			init_question();
+		</script>
+	</main>
+	<footer>
+		<ul class="footer-menu">
+			<li><a href="index.html">Главная</a></li>
+			<li><a href="test.html">Экологический тест</a></li>
+			<li><a href="about.html">О нас</a></li>
+		</ul>
+		<ul class="footer-menu">
+			<li><a href="redbook.html">Красная книга Удмуртии</a></li>
+			<li><a href="stateofecology.html">Состояние экологии</a></li>
+			<li><a href="events.html">Мероприятия</a></li>
+		</ul>
+		<ul class="contacts-footer">
+			<li><a href="about.html">Иванов Максим</a></li>
+			<li><a href="about.html">Караваев Степан</a></li>
+			<li><br></li>
+		</ul>
+		<p><a href="recycle.html">Пункты приёма второсырья</a></p>
+	</footer>
+</body>
+</html>
+<!-- <p><a href="files/redbook.pdf" download="">Скачать файл</a></p>-->
