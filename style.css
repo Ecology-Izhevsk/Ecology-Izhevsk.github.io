@@ -290,7 +290,7 @@ button
 /*stepan-karavaev*/
 .img-redbook img
 {
-    margin-left: 170px;
+    margin:auto;
     border-radius: 10px;
     border: 4px solid green;
 }
