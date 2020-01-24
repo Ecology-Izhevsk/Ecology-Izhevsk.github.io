@@ -291,6 +291,7 @@ button
 .img-redbook img
 {
     margin:auto;
+    display:block;
     border-radius: 10px;
     border: 4px solid green;
 }
@@ -304,6 +305,7 @@ h6
 
 .img-gryaz img
 {
+    display:block;
     margin: auto;
     border-radius: 10px;
 }
