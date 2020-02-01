@@ -17,7 +17,7 @@
 <noscript><div><img src="https://mc.yandex.ru/watch/57192052" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
 <!-- /Yandex.Metrika counter -->
 	<meta charset="utf-8">
-	<title>Экология в Ижевске</title>
+	<title>Экологический тест - Экология в Ижевске</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<link rel="shortcut icon" href="img/shortcut-icon.png">
 	<link rel="icon" href="img/shortcut-icon.png">
@@ -34,12 +34,13 @@
 		var bb = ["afasg", "fmf", "jdsj"];
 		var cc = ["fskfjk", "xdrf", "sjdxe"];
 		var dd = ["sfjsk", "heye", "nvreh"];
+		var qwerty = false;
 		
 	</script>
 </head>
 <body>
 	<header>
-		<h6>Экология в Ижевске</h6>
+		<h1>Экология в Ижевске</h1>
 		<ul class="menu">
 			<li><a href="index.html">Главная</a></li>
 			<li><span>Информация</span>
@@ -100,10 +101,14 @@
 
 			function next_question(x)
 			{
-				qn++;
+				if (qwerty == false)
+				{
+					qn++;
+					prev = true;
+				}
 				var y = x;
 				output += x;
-				prev = true;
+				
 				if (qn < question.length) {
             		init_question();
         		} else {
@@ -123,13 +128,14 @@
 
 			function results()
 			{
-				alert("Ваш результат " + output + " из " + question.length)
+				alert("Ваш результат " + output + " из " + question.length);
+				qwerty = true;
 			}
 
 			init_question();
 		</script>
 	</main>
-	<footer>
+	<footer style="position: relative; bottom: 0px;">
 		<ul class="footer-menu">
 			<li><a href="index.html">Главная</a></li>
 			<li><a href="test.html">Экологический тест</a></li>
