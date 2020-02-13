@@ -309,6 +309,7 @@ h6
     margin: auto;
     border-radius: 10px;
 }
+
 .redbook-text
 {
 	text-align: center;
@@ -323,18 +324,14 @@ h6
 	margin-top: 10px;
 }
 
-.about-us 
+.about-us img
 {
-	font-size: 30px;
-	text-align: center;
-	margin: 30px;
-
-
+	margin-right: 60px;
+	float: right;
+	width: 30px;
 }
+
 .about-us a
 {
-	font-size: 30px;
-	text-decoration: underline;
-	text-align: center;
-	margin-bottom: 50px;
+	
 }
