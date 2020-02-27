@@ -3,10 +3,10 @@ body
 	margin: 0px;
 	color: black;
 	padding: -10px;
-	background-image: url(img/background.jpg);
+	background: url(img/background.jpg) 100% 100%;
         background-repeat: no-repeat;	
 	font-family: 'Roboto', sans-serif;
-        background-size: 100%;
+        background-size: cover;
 	font-size: 22px;
 	padding-bottom: 0px;
 }
