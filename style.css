@@ -3,8 +3,9 @@ body
 	margin: 0px;
 	color: black;
 	padding: -10px;
-	Background-image: url(img/background.jpg);
-        background-repeat: no-repeat;	
+	background-image: url(img/background.jpg);
+        background-repeat: no-repeat;
+        background: 100% auto;	
 	font-family: 'Roboto', sans-serif;
         background-size: cover;
 	font-size: 22px;
