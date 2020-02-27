@@ -4,10 +4,9 @@ body
 	color: black;
 	padding: -10px;
 	background-image: url(img/background.jpg);
-        background-repeat: no-repeat;
-        background: 100% auto;	
+        background-repeat: no-repeat;	
 	font-family: 'Roboto', sans-serif;
-        background-size: cover;
+        background-size: 100% auto cover;
 	font-size: 22px;
 	padding-bottom: 0px;
 }
