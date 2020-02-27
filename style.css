@@ -9,6 +9,7 @@ body
     background-repeat: no-repeat;	
 	font-family: 'Roboto', sans-serif;
     background-size: auto 100%;
+    background-size: 100% auto;
 	font-size: 22px;
 	padding-bottom: 0px;
 }
