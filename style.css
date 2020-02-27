@@ -3,7 +3,7 @@ body
 	margin: 0px;
 	color: black;
 	padding: -10px;
-	background: url(img/background.jpg) auto 100%;
+	background: url(img/background.jpg) 100% auto;
         background-repeat: no-repeat;	
 	font-family: 'Roboto', sans-serif;
         background-size: cover;
