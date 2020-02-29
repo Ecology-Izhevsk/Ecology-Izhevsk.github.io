@@ -147,7 +147,6 @@ h5
 	float: left;
 	margin-right: 10px;
 	border-radius: 6px;
-
 }
 
 .event span
@@ -198,6 +197,7 @@ footer
 footer p
 {
 	margin: 0px 0px 0px 140px;
+	font-size: 16px;
 }
 
 footer a
@@ -333,4 +333,9 @@ h6
 .about-us a
 {
 	
+}
+
+.event a
+{
+	text-decoration: underline;
 }
