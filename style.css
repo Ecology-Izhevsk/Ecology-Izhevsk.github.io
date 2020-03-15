@@ -176,9 +176,15 @@ footer
 	margin: auto;
 	background-color: rgba(0, 90, 0, 0.9);
 	margin-bottom: 0px;
-	padding: 0px 30px 10px 30px;
+	padding: 0px 0px 15px 0px;
 	margin-top: 50px;
 	font-size: 16px;
+}
+
+.footerr
+{
+	width: 75%;
+	margin: auto;
 }
 
 .footer-menu
@@ -189,15 +195,10 @@ footer
 	margin-right: 50px;
 }
 
-.footer-menu:first-child
+.footer-menu:last-child
 {
-	margin-left: 100px;
-}
-
-footer p
-{
-	margin: 0px 0px 0px 140px;
-	font-size: 16px;
+	display: inline-block;
+	margin-top: 0px;
 }
 
 footer a
@@ -209,16 +210,17 @@ footer a
 footer .contacts-footer
 {
 	list-style: none;
-	margin-right: 130px;
+	display: inline-block;
 	margin-bottom: 0px;
 	text-align: right;
 	float: right;
+	margin-left: 0px;
 }
 
 footer .contacts-footer
 {
 	display: inline-block;
-	margin-left: 250px;
+	margin-left: 0px;
 }
 
 .map img
